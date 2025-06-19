@@ -78,7 +78,6 @@ endfunction ()
 # prepare sources
 select_nearest_url ( RE2_PLACE re2 ${RE2_BUNDLE} ${RE2_GITHUB} )
 fetch_and_check ( re2 ${RE2_PLACE} ${RE2_SRC_MD5} RE2_SRC )
-prepare_re2 ( ${RE2_SRC} )
 
 # build
 get_build ( RE2_BUILD re2 )
