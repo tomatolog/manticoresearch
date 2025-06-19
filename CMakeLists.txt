@@ -219,13 +219,13 @@ else ()
 	bannervar ( WITH_GALERA )
 endif ()
 
-# Check for RE2 build
-set ( WITH_RE2_FORCE_STATIC 1 CACHE BOOL "force to compile re2 from sources" )
-with_get ( re2 "RE2" "a regular expression library" )
-
 # Check for Libstemmer build
 set ( WITH_STEMMER_FORCE_STATIC 1 CACHE BOOL "force to compile stemmer from sources" )
 with_get ( stemmer "Stemmer" "stemming library (Snowball)" )
+
+# Check for RE2 build
+set ( WITH_RE2_FORCE_STATIC 1 CACHE BOOL "force to compile re2 from sources" )
+with_get ( re2 "RE2" "a regular expression library" )
 
 get_dep ( nlohmann_json NLJSON "JSON for Modern C++ library" )
 get_dep ( uni-algo UniAlgo "unicode algorithm implementation for C/C++" )
